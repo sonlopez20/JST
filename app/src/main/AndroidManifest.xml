@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jst">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/smaller_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SetupActivity"></activity>
+        <activity
+            android:name=".AddYearActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ClickActivity" />
+        <activity
+            android:name=".MainActivity" />
+        <activity
+            android:name=".IncomeActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Years" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".ForgotPassword"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity
+            android:name=".ReportActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ExpenseActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NewActivity"
+            android:parentActivityName=".YearActivity" />
+        <activity
+            android:name=".YearActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+        android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+        android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

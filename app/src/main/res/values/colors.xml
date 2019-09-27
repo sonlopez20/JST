@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#636363</color>
+    <color name="black">#231F20</color>
+    <color name="lightBlue">#4682B4</color>
+    <color name="white">#FFF</color>
+    <color name="royalBlue">#111E6C</color>
+    <color name="grey">#DCDCDC</color>
+    <color name="burgundy">#7C0A02</color>
+    <color name="colorPrimary">#4682B4</color>
+    <color name="colorPrimaryDark">#231F20</color>
+    <color name="colorAccent">#111E6C</color>
+</resources>

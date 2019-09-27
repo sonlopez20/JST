@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/app_bar_layout"> </include>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_logo"
+        android:background="@drawable/input"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <!--This is password box-->
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_email"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="275dp"
+        android:layout_height="124dp"
+        android:layout_below="@+id/login_toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="308dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/login_password"
+        android:background="@drawable/buttons"
+        android:text="Iniciar Sesion" />
+
+
+
+</RelativeLayout>

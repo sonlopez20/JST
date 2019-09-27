@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddYearActivity">
+
+
+    <include
+        android:id="@+id/add_page_toolbar"
+        layout="@layout/app_bar_layout" />
+
+    <ImageView
+        android:id="@+id/calendar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/add_page_toolbar"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/round_calendar_today_black_18dp"/>
+
+    <EditText
+        android:id="@+id/year_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/calendar"
+        android:background="@drawable/input"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Año : 0000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/add_year"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/year_text"
+        android:background="@drawable/buttons"
+        android:layout_margin="20dp"
+        android:text="Añadir"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
